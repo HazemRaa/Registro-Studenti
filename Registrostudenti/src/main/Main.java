@@ -9,18 +9,19 @@ public class Main {
 		studenti.setCognome("Mohamed");
         studenti.setMatricola(256669);
         System.out.println("Nome e cognome dello Studente: \n" + studenti.getNome() + studenti.getCognome() + "\nNumero matricola: " + studenti.getMatricola());
-       Registro registro = new Registro (new ArrayList<>()); // aggingere studenti nell'ArrayList 
+       Registro registro = new Registro (new ArrayList<>()); // aggiungere studenti nell'ArrayList 
        registro.aggiungereStudente(new Studente ("Mohamed", "Salah",111)) ;
        registro.aggiungereStudente(new Studente ("Omar", "Marmoush",117)) ;
        registro.aggiungereStudente(new Studente ("Harry", "Kane",129)) ;
        
-       Scanner scanner = new Scanner(System.in); // utilizzare il metodo scanner per cercare un studente con la matricola. e stampare i dati realativi 
+       Scanner scanner = new Scanner(System.in); /*
+        utilizzare il metodo scanner per cercare un studente con la matricola. e stampare i dati */ 
        System.out.println("Inserisci una matricola per cercare uno studente: ");
        int matricola = scanner.nextInt();
        registro.cercaStudente(matricola);
        
       /* Creare un menu testuale che permetta all'utente
-       *  diAggiungere uno studente, una volta inserita una matricola sbagliata.
+       *  diAggiungere un studente nuovo, una volta inserita una matricola sbagliata.
        */
        
 
