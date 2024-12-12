@@ -10,7 +10,7 @@ public class Studente {
 		this.cognome = cognome;
 		this.matricola = matricola;
 	}
-	public String getNome() {//getter / setter per prendere un campo o modificare un campo di un studente con Source
+	public String getNome() {//getter / setter per prendere un campo o modificare un campo 
 		return nome;
 	}
 	public void setNome(String nome) {
